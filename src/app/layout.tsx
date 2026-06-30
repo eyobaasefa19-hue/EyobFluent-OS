@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./global.css";
 
 export const metadata: Metadata = {
   title: "EyobFluent OS",
-  description: "AI-Powered English Fluency Operating System",
+  description: "A beautiful Fluent design operating system portfolio",
 };
 
 export default function RootLayout({
@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="antialiased bg-slate-950 text-slate-50">
+    <html lang="en" className="dark">
+      <body className="antialiased bg-[#1e1e1e] text-white min-h-screen">
         {children}
       </body>
     </html>
